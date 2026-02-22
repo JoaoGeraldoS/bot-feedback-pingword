@@ -11,8 +11,9 @@ type FeedBack struct {
 
 type Update struct {
 	Message struct {
-		Text string `json:"text"`
-		Chat struct {
+		MessageID int    `json:"message_id"`
+		Text      string `json:"text"`
+		Chat      struct {
 			ID int64 `json:"id"`
 		} `json:"chat"`
 	} `json:"message"`
