@@ -42,7 +42,7 @@ func main() {
 
 	http.HandleFunc("GET /health", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Println("Acordado")
+		log.Println("Acordado")
 		fmt.Fprint(w, "Acordado")
 	})
 
